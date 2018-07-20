@@ -3,15 +3,16 @@ version: 2
 jobs:
   build:
     docker:
-       - image: circleci/ruby:2.4.1-node-browsers
-          environment:
-            RAILS_ENV: test
-            PGHOST: 127.0.0.1
-            PGUSER: root
-       - image: circleci/postgres:9.6.2-alpine
-          environment:
-            POSTGRES_USER: root
-            POSTGRES_DB: circle-test_test
+      - image: circleci/ruby:2.4.1-node-browsers
+        environment:
+          PGHOST: localhost
+          PGUSER: your-app-name
+          RAILS_ENV: test
+      - image: postgres:9.5
+        environment:
+          POSTGRES_USER: your-app-name
+          POSTGRES_DB: your-app-name_test
+          POSTGRES_PASSWORD: ""
     working_directory: ~/repo
     steps:
       - checkout
