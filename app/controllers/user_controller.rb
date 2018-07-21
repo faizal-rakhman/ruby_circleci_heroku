@@ -1,6 +1,6 @@
 class UserController < ApplicationController
 
-  def main
+  def index
     redirect_to index_path
   end
 
