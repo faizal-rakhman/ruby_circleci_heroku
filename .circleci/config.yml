@@ -82,7 +82,7 @@ workflows:
             - deploy_staging
       - deploy_production:
           requires:
-            - hold
+            - deploy_production_approval
 
 #workflows:
 #  version: 2
