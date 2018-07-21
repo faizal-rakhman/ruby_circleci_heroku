@@ -50,6 +50,8 @@ jobs:
       enabled: true
     environment:
       HEROKU_APP: "rubyexampleservice"
+      RAILS_ENV: "test"
+      RACK_ENV: "test"
     steps:
       - checkout
       - run:
