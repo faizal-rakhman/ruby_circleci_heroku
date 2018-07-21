@@ -76,7 +76,9 @@ workflows:
       - deploy_staging:
           requires:
             - build
-      - deploy_production
+      - deploy_production:
+          requires:
+            - deploy_staging
 
 #workflows:
 #  version: 2
