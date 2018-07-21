@@ -1,5 +1,7 @@
 class UserController < ApplicationController
-  def index
+
+  def main
     redirect_to home_path
   end
-  end
+
+end
