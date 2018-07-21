@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="11481c51-40c4-4096-8d13-08471c784504" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.circleci/config.yml" afterPath="$PROJECT_DIR$/.circleci/config.yml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="$PROJECT_DIR$/.bundle/" />
@@ -32,7 +33,7 @@
         <entry file="file://$PROJECT_DIR$/.circleci/config.yml">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="424">
-              <caret line="58" column="65" lean-forward="false" selection-start-line="58" selection-start-column="65" selection-end-line="58" selection-end-column="65" />
+              <caret line="58" column="12" lean-forward="false" selection-start-line="58" selection-start-column="12" selection-end-line="58" selection-end-column="12" />
               <folding />
             </state>
           </provider>
@@ -417,12 +418,12 @@
       <option name="presentableId" value="Default" />
       <updated>1532105695191</updated>
       <workItem from="1532105698467" duration="8317000" />
-      <workItem from="1532154534347" duration="13626000" />
+      <workItem from="1532154534347" duration="13687000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="21943000" />
+    <option name="totallyTimeSpent" value="22004000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1680" height="1050" extended-state="0" />
@@ -640,10 +641,10 @@
         <state relative-caret-position="-1925">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <marker date="1532185244000" expanded="true" signature="49732:49774" ph="..." />
-            <marker date="1532185244000" expanded="true" signature="49732:49792" ph="..." />
-            <marker date="1532185244000" expanded="true" signature="49732:49805" ph="..." />
-            <marker date="1532185244000" expanded="true" signature="49732:49820" ph="..." />
+            <marker date="1532185331000" expanded="true" signature="49600:49642" ph="..." />
+            <marker date="1532185331000" expanded="true" signature="49600:49660" ph="..." />
+            <marker date="1532185331000" expanded="true" signature="49600:49673" ph="..." />
+            <marker date="1532185331000" expanded="true" signature="49600:49688" ph="..." />
           </folding>
         </state>
       </provider>
@@ -819,7 +820,7 @@
     <entry file="file://$PROJECT_DIR$/.circleci/config.yml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="424">
-          <caret line="58" column="65" lean-forward="false" selection-start-line="58" selection-start-column="65" selection-end-line="58" selection-end-column="65" />
+          <caret line="58" column="12" lean-forward="false" selection-start-line="58" selection-start-column="12" selection-end-line="58" selection-end-column="12" />
           <folding />
         </state>
       </provider>
