@@ -57,8 +57,10 @@ jobs:
           name: Deploy Master to Heroku Staging
           command: |
             git push https://heroku:cd6f4a13-7c29-409f-9761-a4c12219e7c6@git.heroku.com/rubyexampleservice.git master
-            echo 'export TESTING=asdf' >> $BASH_ENV
-            source $BASH_ENV
+      - run:
+          echo 'export TESTING=asdf' >> $BASH_ENV
+      - run:
+          source $BASH_ENV
   deploy_production:
     machine:
       enabled: true
