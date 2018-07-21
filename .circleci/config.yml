@@ -2,13 +2,15 @@
 version: 2
 jobs:
   test:
+    docker:
+      - image: circleci/ruby:2.4.1-node-browsers
     steps:
       - run:
-        name: run tests
-        command: |
-          mkdir /tmp/test-results
-          TEST_FILES="$(circleci tests glob "spec/**/*_spec.rb" | circleci tests split --split-by=timings)"
-          bundle exec rspec
+          name: run tests
+          command: |
+            mkdir /tmp/test-results
+            TEST_FILES="$(circleci tests glob "spec/**/*_spec.rb" | circleci tests split --split-by=timings)"
+            bundle exec rspec
   build:
     docker:
       - image: circleci/ruby:2.4.1-node-browsers
