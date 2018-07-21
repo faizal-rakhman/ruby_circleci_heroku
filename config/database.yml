@@ -6,17 +6,17 @@ default: &default
 development:
   <<: *default
   database: ruby_circleci_heroku_example_development
-  username: <%= ENV['POSTGRES_USER'] %>
-  password: <%= ENV['POSTGRES_PASSWORD'] %>
+  username: postgres
+  password: ""
 
 test:
   <<: *default
-  database: ruby_circleci_heroku_example_test
+  database: <%= ENV['POSTGRES_DATABASE'] %>
   username: <%= ENV['POSTGRES_USER'] %>
   password: <%= ENV['POSTGRES_PASSWORD'] %>
 
 production:
   <<: *default
-  database: ruby_circleci_heroku_example_production
-  username: ruby_circleci_heroku_example
-  password: <%= ENV['RUBY_CIRCLECI_HEROKU_EXAMPLE_DATABASE_PASSWORD'] %>
+  database: <%= ENV['POSTGRES_DATABASE'] %>
+  username: <%= ENV['POSTGRES_USER'] %>
+  password: <%= ENV['POSTGRES_PASSWORD'] %>
