@@ -46,8 +46,10 @@ jobs:
           path: /tmp/test-results
           destination: test-results
   deploy:
-    docker:
-      - image: buildpack-deps:trusty
+    machine:
+      enabled: true
+    environment:
+      HEROKU_APP: "rubyexampleservice"
     steps:
       - checkout
       - run:
