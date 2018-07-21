@@ -76,9 +76,13 @@ workflows:
       - deploy_staging:
           requires:
             - build
-      - deploy_production:
+      - hold:
+          type: approval
           requires:
             - deploy_staging
+      - deploy_production:
+          requires:
+            - hold
 
 #workflows:
 #  version: 2
