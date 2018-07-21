@@ -56,7 +56,7 @@ jobs:
           name: Deploy Master to Heroku
           command: |
             git push https://heroku:26bf1315-2ddd-40d9-b341-6291cda537fd@git.heroku.com/rubyexampleservice.git master
-            rails s
+            heroku rails s
 
 workflows:
   version: 2
