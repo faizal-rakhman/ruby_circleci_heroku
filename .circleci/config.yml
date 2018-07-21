@@ -46,8 +46,6 @@ jobs:
           path: /tmp/test-results
           destination: test-results
   deploy:
-    docker:
-      - image: circleci/ruby:2.4.1-node-browsers
     machine:
       enabled: true
     environment:
