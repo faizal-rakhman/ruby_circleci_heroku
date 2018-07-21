@@ -9,6 +9,10 @@ jobs:
           PGUSER: your-app-name
           RAILS_ENV: test
       - image: postgres:9.5
+        environment:
+          POSTGRES_USER: postgres
+          POSTGRES_DB: your-app-name_test
+          POSTGRES_PASSWORD: ""
     working_directory: ~/repo
     steps:
       - checkout
@@ -24,12 +28,6 @@ jobs:
           paths:
             - ./vendor/bundle
           key: v1-dependencies-{{ checksum "Gemfile.lock" }}
-      - run:
-          name: setup Db
-          command: |
-            bundle exec rake db:create
-            bundle exec rake db:schema:load
-            bundle exec rake db:migrate
       - run:
           name: run tests
           command: |
