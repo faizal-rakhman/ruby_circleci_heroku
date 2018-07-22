@@ -5,7 +5,7 @@ jobs:
     docker:
       - image: circleci/ruby:2.4.1-node-browsers
         environment:
-          PGHOST: localhost
+          PGHOST: ec2-107-22-169-45.compute-1.amazonaws.com
           PGUSER: postgres
           RAILS_ENV: test
       - image: postgres:9.5
