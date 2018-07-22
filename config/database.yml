@@ -11,12 +11,12 @@ development:
 
 test:
   <<: *default
-  database: dfrraa0h7jpq78
-  username: rxzdyhiaftiith
-  password: 628dccd740223b6d066fa61e9ae7ff83b31d1d1d079b4740176698327089f99a
+  database: da8d67d1vab7bv
+  username: kaytengnhpvktz
+  password: ebc2092973415cf68afbdeebe5737ce9ba874f31eb8d9a5340ef4c762830ed07
 
 production:
   <<: *default
-  database: dfrraa0h7jpq78
-  username: rxzdyhiaftiith
-  password: 628dccd740223b6d066fa61e9ae7ff83b31d1d1d079b4740176698327089f99a
+  database: da8d67d1vab7bv
+  username: kaytengnhpvktz
+  password: ebc2092973415cf68afbdeebe5737ce9ba874f31eb8d9a5340ef4c762830ed07
