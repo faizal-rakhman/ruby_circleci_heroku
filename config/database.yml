@@ -11,9 +11,9 @@ development:
 
 test:
   <<: *default
-  database: da8d67d1vab7bv
-  username: kaytengnhpvktz
-  password: ebc2092973415cf68afbdeebe5737ce9ba874f31eb8d9a5340ef4c762830ed07
+  database: db
+  username: postgres
+  password: password
 
 production:
   <<: *default
