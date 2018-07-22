@@ -5,14 +5,13 @@ jobs:
     docker:
       - image: circleci/ruby:2.4.1-node-browsers
         environment:
-          PGHOST: ec2-107-22-169-45.compute-1.amazonaws.com
-          PGUSER: kaytengnhpvktz
-          RAILS_ENV: development
-      - image: postgres:9.5
+          PGHOST: localhost
+          PGUSER: postgres
+      - image: circleci/postgres:9.6.9-alpine-postgis-ram
         environment:
-          POSTGRES_USER: kaytengnhpvktz
-          POSTGRES_DB: da8d67d1vab7bv
-          POSTGRES_PASSWORD: ebc2092973415cf68afbdeebe5737ce9ba874f31eb8d9a5340ef4c762830ed07
+          POSTGRES_USER: postgres
+          POSTGRES_DB: db
+          POSTGRES_PASSWORD: password
     working_directory: ~/repo
     steps:
       - checkout
