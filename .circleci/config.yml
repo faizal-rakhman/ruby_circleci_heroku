@@ -60,12 +60,14 @@ jobs:
       enabled: true
     environment:
       HEROKU_APP: "rubyexampleservice"
+      CUSTOM_RUBY_VERSION: "2.4.1"
     steps:
       - checkout
       - run:
           name: Deploy Master to Heroku Production
           command: |
             git push https://heroku:cd6f4a13-7c29-409f-9761-a4c12219e7c6@git.heroku.com/rubyexampleserviceproduction.git master
+            bundle exec rake db:schema:load
 
 workflows:
   version: 2
