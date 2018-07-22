@@ -69,7 +69,7 @@ jobs:
           name: Deploy Master to Heroku Production
           command: |
             gem install bundler
-            bundler update
+            bundler install
             bundle exec rake db:schema:load
             git push https://heroku:cd6f4a13-7c29-409f-9761-a4c12219e7c6@git.heroku.com/rubyexampleserviceproduction.git master
 
