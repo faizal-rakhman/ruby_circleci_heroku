@@ -7,7 +7,7 @@ jobs:
         environment:
           PGHOST: ec2-107-22-169-45.compute-1.amazonaws.com
           PGUSER: kaytengnhpvktz
-          RAILS_ENV: test
+          RAILS_ENV: development
       - image: postgres:9.5
         environment:
           POSTGRES_USER: kaytengnhpvktz

@@ -5,9 +5,9 @@ default: &default
 
 development:
   <<: *default
-  database: ruby_circleci_heroku_example_development
-  username: <%= ENV['POSTGRES_USER'] %>
-  password: <%= ENV['POSTGRES_PASSWORD'] %>
+  database: da8d67d1vab7bv
+  username: kaytengnhpvktz
+  password: ebc2092973415cf68afbdeebe5737ce9ba874f31eb8d9a5340ef4c762830ed07
 
 test:
   <<: *default
