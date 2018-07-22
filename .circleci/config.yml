@@ -10,6 +10,7 @@ jobs:
           RAILS_ENV: development
       - image: circleci/postgres:9.6.9-alpine-postgis-ram
         environment:
+          RAILS_ENV: development
           POSTGRES_USER: postgres
           POSTGRES_DB: db
           POSTGRES_PASSWORD: password
